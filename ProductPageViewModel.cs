@@ -27,61 +27,71 @@ namespace AppMobile
                 {   Picture="totebag1.jpg",
                     Name="Tote Bag ESKY",
                     Quantity="1",
-                    Price="49 lei"
+                    Price="49 lei",
+                    Supplier="Leroy Merlin"
                 },
                 new Items
                 {   Picture="totebag2.jpg",
                     Name="Tote Bag BIRDS",
                     Quantity="1",
-                    Price="55 lei"
+                    Price="55 lei",
+                    Supplier="Leroy Merlin"
                 },
                 new Items
                 {   Picture="totebag3.jpg",
                     Name="Tote Bag CHILL",
                     Quantity="1",
-                    Price="49 lei"
+                    Price="49 lei",
+                    Supplier="La Casa"
                 },
                 new Items
                 {   Picture="totebag4.jpg",
                     Name="Tote Bag COZY",
                     Quantity="1",
-                    Price="55 lei"
+                    Price="55 lei",
+                    Supplier="La Casa"
                 },
                 new Items
                 {   Picture="totebag5.jpg",
                     Name="Tote Bag FEELS",
                     Quantity="1",
-                    Price="49 lei"
+                    Price="49 lei",
+                    Supplier="JYSK"
                 },
                 new Items
                 {   Picture="totebag6.jpg",
                     Name="Tote Bag WINTRY",
                     Quantity="1",
-                    Price="55 lei"
+                    Price="55 lei",
+                    Supplier="JYSK"
                 },
                 new Items
                 {   Picture="totebag7.jpg",
                     Name="Tote Bag FROST",
                     Quantity="1",
-                    Price="49 lei"
+                    Price="49 lei",
+                    Supplier="JYSK"
                 },
                 new Items
                 {   Picture="totebag8.jpg",
                     Name="Tote Bag DELICACY",
                     Quantity="1",
-                    Price="55 lei"
+                    Price="55 lei",
+                    Supplier="Leroy Merlin"
                 },
                 new Items
                 {   Picture="totebag9.jpg",
                     Name="Tote Bag ILLUSION",
                     Quantity="1",
-                    Price="49 lei"
+                    Price="49 lei",
+                    Supplier="Leroy Merlin"
                 },
                 new Items
                 {   Picture="totebag10.jpg",
                     Name="Tote Bag INCEPTION",
                     Quantity="1",
-                    Price="55 lei"
+                    Price="55 lei",
+                    Supplier="JYSK"
                 }
             };
             CartItems = new ObservableCollection<Items> { };

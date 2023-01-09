@@ -21,9 +21,10 @@
                             <Frame HeightRequest="100" WidthRequest="100" HasShadow="False" Grid.Column="0" Grid.RowSpan="2" CornerRadius="10" BackgroundColor="White"  VerticalOptions="CenterAndExpand">
                                 <Image Source="{Binding Picture}"  Aspect="AspectFill" />
                             </Frame>
-                            <StackLayout Grid.RowSpan="2" Grid.Column="1" VerticalOptions="Center">
-                                <Label Text="{Binding Name}"  Padding="10,0,0,10" FontSize="17" FontAttributes="Bold"/>
-                                <Label  Text="{Binding Price}" Padding="10,0,0,0" FontAttributes="Bold" FontSize="20" TextColor="#2C363C"/>
+                            <StackLayout Grid.RowSpan="3" Grid.Column="1" VerticalOptions="Center">
+                                <Label Text="{Binding Name}"  Padding="10,0,0,10" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="{Binding Supplier}"  Padding="10,0,0,10" FontSize="17" FontAttributes="Bold" TextColor="Black"/>
+                                <Label  Text="{Binding Price}" Padding="10,0,0,0" FontAttributes="Bold" FontSize="20" TextColor="Black"/>
                             </StackLayout>
                             <!--<Grid Grid.Column="3" VerticalOptions="Center">
                                 <Button  FontSize="13"  Margin="0,0,10,0" BackgroundColor="#2C363C" Text="View Details" Command="{Binding Source={x:Reference listView},Path=BindingContext.Itemclick}" CommandParameter="{Binding}" TextColor="White" HorizontalOptions="End" HeightRequest="40" WidthRequest="70"/>

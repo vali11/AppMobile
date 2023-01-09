@@ -19,6 +19,8 @@ public partial class CreateWishList : ContentPage
     {
         var wlist = (WishList)BindingContext;
         wlist.Date = DateTime.UtcNow;
+        Supplier selectedSupplier = (SupplierPicker.SelectedItem as Supplier);
+        wlist.SupplierID = selectedSupplier.ID;
         await App.Database.SaveWishListAsync(wlist);
         await Navigation.PopAsync();
     }
@@ -33,6 +35,10 @@ public partial class CreateWishList : ContentPage
     {
         base.OnAppearing();
         var wishl = (WishList)BindingContext;
+        var items = await App.Database.GetSuppliersAsync();
+        SupplierPicker.ItemsSource = (System.Collections.IList)items;
+        SupplierPicker.ItemDisplayBinding = new Binding("SupplierDetails");
+
 
         listView.ItemsSource = await App.Database.GetListTotebagsAsync(wishl.ID);
     }

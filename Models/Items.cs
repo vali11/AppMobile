@@ -12,5 +12,7 @@ namespace AppMobile.Models
         public string Quantity { get; set; }
         public string Picture { get; set; }
         public string Name { get; set; }
+
+        public string Supplier { get; set; }
     }
 }

@@ -18,13 +18,13 @@
         />
 
         <ShellContent
-        Title="My WishLists"
-        ContentTemplate="{DataTemplate local:MyWishLists}"
+        Title="Our products"
+        ContentTemplate="{DataTemplate local:ProductPage}"
         />
 
         <ShellContent
-        Title="Our products"
-        ContentTemplate="{DataTemplate local:ProductPage}"
+        Title="My WishLists"
+        ContentTemplate="{DataTemplate local:MyWishLists}"
         />
 
         <ShellContent

@@ -15,6 +15,13 @@ public partial class SupplierPage : ContentPage
         await Navigation.PopAsync();
     }
 
+    async void OnDeleteButtonClicked(object sender, EventArgs e)
+    {
+        var supplier = (Supplier)BindingContext;
+        await App.Database.DeleteSupplierAsync(supplier);
+        await Navigation.PopAsync();
+    }
+
     /*async void OnShowMapButtonClicked(object sender, EventArgs e)
     {
         var supplier = (Supplier)BindingContext;

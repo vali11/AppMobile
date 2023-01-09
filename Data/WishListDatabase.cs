@@ -35,6 +35,10 @@ namespace AppMobile.Data
                 return _database.InsertAsync(supplier);
             }
         }
+        public Task<int> DeleteSupplierAsync(Supplier supplier)
+        {
+            return _database.DeleteAsync(supplier);
+        }
         public Task<int> SaveTotebagAsync(Totebag totebag)
         {
             if (totebag.ID != 0)

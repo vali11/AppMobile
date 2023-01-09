@@ -6,12 +6,12 @@
              xmlns:local="clr-namespace:AppMobile">
     
     <StackLayout Margin="20">
-        <Editor Placeholder="Enter the content of your wishlist" Text="{Binding Description}" HeightRequest="50" >
+        <Editor Placeholder="Enter the title of your wishlist" Text="{Binding Description}" HeightRequest="50" >
             <Editor.Behaviors>
                 <local:ValidationBehaviour />
             </Editor.Behaviors>
         </Editor>
-
+        <Picker x:Name="SupplierPicker" Title="Enter Supplier Name"/>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -23,7 +23,7 @@
         <ListView x:Name="listView" Margin="20">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Detail="{Binding Description}" />
+                    <TextCell Detail="{Binding Description}" TextColor="Black" />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
