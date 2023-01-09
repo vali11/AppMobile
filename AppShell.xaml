@@ -26,6 +26,11 @@
         Title="Our products"
         ContentTemplate="{DataTemplate local:ProductPage}"
         />
+
+        <ShellContent
+        Title="My Suppliers"
+        ContentTemplate="{DataTemplate local:SupplierEntryPage}"
+        />
     </TabBar>
 
 </Shell>

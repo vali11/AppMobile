@@ -18,6 +18,22 @@ namespace AppMobile.Data
             _database.CreateTableAsync<WishList>().Wait();
             _database.CreateTableAsync<Totebag>().Wait();
             _database.CreateTableAsync<ListTotebag>().Wait();
+            _database.CreateTableAsync<Supplier>().Wait();
+        }
+        public Task<List<Supplier>> GetSuppliersAsync()
+        {
+            return _database.Table<Supplier>().ToListAsync();
+        }
+        public Task<int> SaveSupplierAsync(Supplier supplier)
+        {
+            if (supplier.ID != 0)
+            {
+                return _database.UpdateAsync(supplier);
+            }
+            else
+            {
+                return _database.InsertAsync(supplier);
+            }
         }
         public Task<int> SaveTotebagAsync(Totebag totebag)
         {
