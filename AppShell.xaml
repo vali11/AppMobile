@@ -21,6 +21,11 @@
         Title="My WishLists"
         ContentTemplate="{DataTemplate local:MyWishLists}"
         />
+
+        <ShellContent
+        Title="Our products"
+        ContentTemplate="{DataTemplate local:ProductPage}"
+        />
     </TabBar>
 
 </Shell>
